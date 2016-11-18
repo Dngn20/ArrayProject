@@ -49,6 +49,14 @@ public class ArrayController
 		
 	
 	}
+	public void impactHipsters()
+	{
+		for(Array currentHipster : hipster)
+		{
+			currentHipster.calculateHipsterRank();
+		}
+	}
+	
 	public String[] getWords()
 	{
 		return words;
